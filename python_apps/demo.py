@@ -22,7 +22,7 @@ s1 = time.time()
 
 # get all nearest neighbours for all the datapoint
 # using a pool of 4 threads to compute
-neighbours = index.knnQueryBatch(data[:1000], k=100, num_threads=16)
+neighbours = index.knnQueryBatch(data[:50000], k=100, num_threads=16)
 
 s2 = time.time()
 
